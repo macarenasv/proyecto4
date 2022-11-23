@@ -1,6 +1,24 @@
 .App {
   text-align: center;
+ height: 500vh;
 }
+
+.App {
+	-webkit-animation: color-change-2x 5s linear infinite alternate both;
+	        animation: color-change-2x 5s linear infinite alternate both;
+}
+
+ 
+
+@keyframes color-change-2x {
+  0% {
+    background: #d5f5f8;
+  }
+  100% {
+    background: #cecdcf;
+  }
+}
+
 
 .App-logo {
   height: 40vmin;
