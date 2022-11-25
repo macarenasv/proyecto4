@@ -1,18 +1,21 @@
 .navigation {
-    height: 60px;
+    height: 100px;
     width: 100%;
     display: flex;
     align-items: center;
     position: relative;
     padding: 0.5rem 0rem;
-    background-color: #fff;
+    background-color: #ffb376;
     color: black;
     box-shadow: 0 2px 2px 2px rgba(9, 9, 9, 0.23);
   }
   
+  .logo {
+    height: 100px;
+  }
   .brand-name {
     text-decoration: none;
-    color: black;
+    color: #283b8b;
     font-size: 1.3rem;
     margin-left: 1rem;
   }

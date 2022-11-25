@@ -16,6 +16,7 @@ export default function FormularioContacto() {
       try {
         const docRef = await addDoc( collection( db, "Contactos" ), values );
         console.log( "Document written with ID: ", docRef.id );
+        window.alert("Muchas gracias " + values.name + "! Te estaremos contactando pronto.")
       } catch ( e ) {
         console.error( "Error adding document: ", e );
       }

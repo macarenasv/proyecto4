@@ -8,8 +8,8 @@ export default function Navbar() {
   return (
     <div> 
     <nav className="navigation">
-      <a href="/" className="brand-name">
-        Restaurant
+      <a href="/About-us" className="brand-name">
+        <img src= 'img/Nori.png' className= "logo" alt=""/>
       </a>
       <button className="hamburger" onClick={ () => {
         setIsNavExpanded( !isNavExpanded );

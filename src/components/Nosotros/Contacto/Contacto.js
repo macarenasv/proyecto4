@@ -1,6 +1,6 @@
 import FormularioContactoFormik from './FormularioContacto/FormularioContactoFormik';
 
-import "./Contacto.css";
+import "./FormularioContacto/Formulario-Contacto.css";
 
 export default function Contacto() {
 

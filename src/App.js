@@ -19,10 +19,11 @@ function App() {
           <Route
             path="/about-us"
             element={ <Nosotros /> }
+            
           />
           <Route
             path="/menu"
-            element={ <Menu /> }
+            element={ <Menu image="Nori.png"/> }
           />
           <Route
             path="/reservations"
