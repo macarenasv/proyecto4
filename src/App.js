@@ -9,6 +9,7 @@ import Menu from './components/Menu/Menu';
 import Navbar from './components/Navbar/Navbar';
 import Nosotros from './components/Nosotros/Nosotros';
 import Reservacion from './components/Reservacion/Reservacion';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   return (
@@ -18,25 +19,33 @@ function App() {
         <Routes>
           <Route
             path="/about-us"
-            element={ <Nosotros /> }
-            
+            element={<Nosotros />}
+
           />
           <Route
             path="/menu"
-            element={ <Menu image="Nori.png"/> }
+            element={
+            <Menu
+              name="Especiales del día"
+              image1="kuraRoll.jpeg"
+              image2="nigiriSalmon.jpeg"
+              image3="misoRamen.jpeg"
+              image4="edamame.jpeg"
+           /> }
+
           />
           <Route
             path="/reservations"
-            element={ < Reservacion /> }
+            element={< Reservacion />}
           />
           <Route
             path="/"
-            element={ <Nosotros /> }
+            element={<Nosotros />}
           />
 
         </Routes>
       </Router>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

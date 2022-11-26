@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import ControlledCarousel from './Header'
+import ControlledCarousel from '../Nosotros/Carousel'
 
 export default function Navbar() {
   const [ isNavExpanded, setIsNavExpanded ] = useState( false )
@@ -46,7 +46,7 @@ export default function Navbar() {
       </div>
      
     </nav>
-    <ControlledCarousel/>
+   
     </div>
   );
 }

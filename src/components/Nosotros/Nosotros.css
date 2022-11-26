@@ -1,10 +1,10 @@
-
-container{
-    display:flex;
-    flex-direction: row;
-    
+#cont {
+    display:grid;
+    grid-template-areas: 'a a'
+    'b c';
     margin: 50px;
-    box-shadow: 0px 12px 28px 0px rgba(0, 0, 0, 0.2), 0px 2px 4px 0px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(255, 255, 255, 0.05) inset;
+    justify-items: center;
+    
 }
 
 .textoNosotros {
@@ -12,22 +12,41 @@ container{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
     padding: 30px;
-    align-self: center;
+    grid-area: a;
+    justify-self: center;
+    
 }
 
-.imagenNosotros{
-    width: 500px;
+.imagenNosotros1{
+    width: 75%;
+    grid-area: b;
+    
+
+}
+
+.imagenNosotros2{
+    width: 75%;
+    grid-area: c;
+    
 }
 
 .contacto{
    display: flex;
+   flex-wrap: wrap;
    flex-direction: row-reverse;
-   justify-content: center;
+   justify-content:space-around;
+   
   
 }
 
-.imagenContacto{
-    width: 500px;
-    padding-right: 30px;
+.imagenContacto
+.formContacto
+{
+align-items: flex-start;
 }
+
+.mensaje{
+    width: 50%;
+}
+
 
