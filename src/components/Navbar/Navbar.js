@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import ControlledCarousel from '../Nosotros/Carousel'
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+
+
 
 export default function Navbar() {
   const [ isNavExpanded, setIsNavExpanded ] = useState( false )
@@ -14,7 +17,7 @@ export default function Navbar() {
       <button className="hamburger" onClick={ () => {
         setIsNavExpanded( !isNavExpanded );
       } }>
-        {/* icon from heroicons.com */ }
+        
         <svg
           xmlns="http://www.w3.org/2000/svg"
           className="h-5 w-5"
@@ -32,21 +35,21 @@ export default function Navbar() {
         className={
           isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
         }>
-        <ul>
-          <li>
+         <ul>
+         <li>
             <a href="/about-us">Nosotros</a>
           </li>
-          <li>
-            <a href="/menu">Menú</a>
+           <li>
+           <a href="/menu">Menú</a>
           </li>
-          <li>
-            <a href="/reservations">Reservas</a>
-          </li>
+          <li>   
+            <a href="/reservations">Reservas</a> 
+            </li>
         </ul>
       </div>
      
     </nav>
    
     </div>
-  );
+   );
 }

@@ -1,4 +1,4 @@
-import { Container } from 'react-bootstrap';
+
 import ControlledCarousel from './Carousel.js';
 import Contacto from './Contacto/Contacto.js';
 import './Nosotros.css';

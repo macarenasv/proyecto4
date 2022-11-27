@@ -14,7 +14,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Navbar/>
       <Router>
         <Routes>
           <Route
@@ -28,9 +28,11 @@ function App() {
             <Menu
               name="Especiales del día"
               image1="kuraRoll.jpeg"
-              image2="nigiriSalmon.jpeg"
-              image3="misoRamen.jpeg"
+              image2="misoRamen.jpeg"
+              image3="nigiriSalmon.jpeg"
               image4="edamame.jpeg"
+              image5="rainbowRoll.jpeg"
+              image6="handrollVeggie.jpeg"
            /> }
 
           />

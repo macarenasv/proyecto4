@@ -2,12 +2,19 @@
     box-sizing: border-box;
   }
   
+  .formulario{
+    height: max-content;
+    padding-bottom: 40%;
+   
+  }
+
   form {
     width: 300px;
     padding: 16px;
     border-radius: 10px;
     margin: auto;
     background-color: #ffb37b;
+   
   }
   
   form label {
@@ -20,17 +27,17 @@
 
 
   form input[type="text"],
-  form input[type="tel"]
-  form input[type="email"]
-  form input[type="date"]
-  form input[type="time"]
+  form input[type="tel"],
+  form input[type="email"],
+  form input[type="date"],
+  form input[type="time"],
   form input[type="number"] {
     width: 180px;
     padding: 3px 10px;
     border: 1px solid #f6f6f6;
     border-radius: 3px;
     background-color: #f6f6f6;
-    margin: 8px 0;
+    margin: 8px 8px;
     display: inline-block;
     text-align: left;
     
@@ -63,3 +70,21 @@
     resize: none;
     display: block;
   }
+
+ 
+
+  .text-shadow-drop-center {
+    animation: text-shadow-drop-center 0.6s both;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 50px;
+}
+
+
+@keyframes text-shadow-drop-center {
+  0% {
+    text-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    text-shadow: 0 0 18px rgba(0, 0, 0, 0.35);
+  }
+}

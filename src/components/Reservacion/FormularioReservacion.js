@@ -3,9 +3,11 @@ import { useFormik } from 'formik';
 import { db } from '../../config/firestore';
 import "./Reservacion.css";
 
+
 let minDate = new Date().toJSON().slice(0, 10);
 
 export default function Reservacion() {
+  
   const { handleSubmit, handleChange, values } = useFormik( {
     initialValues: {
       name: "",
@@ -22,7 +24,7 @@ export default function Reservacion() {
       try {
         const docRef = await addDoc( collection( db, "Reserva" ), values );
         console.log( "Document written with ID: ", docRef.id );
-        window.alert("Gracias por su reserva para: " + values.reservationDate + values.reservationTime)
+        window.alert("Gracias por su reserva para: " + values.reservationDate + " a las " + values.reservationTime)
       } catch ( e ) {
         console.error( "Error adding document: ", e );
       }
@@ -30,6 +32,9 @@ export default function Reservacion() {
   } )
 
   return (
+    <div className="formulario">
+      <h1 className="text-shadow-drop-center"> Reserva con nosotros!</h1>
+      
     <form onSubmit={ handleSubmit }>
       <label htmlFor='name'>Nombre</label>
       <input id='name' name='name' type="text" value={ values.name } onChange={ handleChange }></input>
@@ -53,6 +58,12 @@ export default function Reservacion() {
       <input id='reservationTime' name='reservationTime' type="time" min="12:00:00" max="23:00:00" value={ values.reservationTime} onChange={ handleChange }></input>
 
       <button type='submit'>Enviar</button>
+
+      
     </form>
+
+    <img src="img/reserva.png" width={200}/>
+
+    </div>
   )
 }
